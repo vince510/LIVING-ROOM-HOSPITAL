@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Living Room Hospital Attachment Application</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 700px;
+            background: #fff;
+            margin: auto;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #0077cc;
+        }
+
+        p {
+            text-align: center;
+            color: #555;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            background-color: #0077cc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #005fa3;
+        }
+
+        .requirements {
+            background: #eef7ff;
+            padding: 15px;
+            border-left: 4px solid #0077cc;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Living Room Hospital Attachment Application Form</h2>
+
+    <div class="requirements">
+        <h3>Required Documents</h3>
+        <ul>
+            <li>Institution Attachment Letter</li>
+            <li>Student ID Copy</li>
+            <li>Updated CV</li>
+            <li>Relevant Academic Documents (Optional)</li>
+        </ul>
+    </div>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="institution">Institution Name</label>
+        <input type="text" id="institution" name="institution" required>
+
+        <label for="course">Course</label>
+        <input type="text" id="course" name="course" required>
+
+        <label for="department">Department Applying For</label>
+        <select id="department" name="department" required>
+            <option value="">Select Department</option>
+            <option>Nursing</option>
+            <option>ICT</option>
+            <option>Laboratory</option>
+            <option>Pharmacy</option>
+            <option>Administration</option>
+        </select>
+
+        <label for="duration">Attachment Duration</label>
+        <input type="text" id="duration" name="duration" placeholder="e.g. 3 Months" required>
+
+        <label for="institutionLetter">Upload Institution Attachment Letter</label>
+        <input type="file" id="institutionLetter" name="institutionLetter" accept=".pdf,.doc,.docx" required>
+
+        <label for="studentId">Upload Student ID</label>
+        <input type="file" id="studentId" name="studentId" accept=".pdf,.jpg,.jpeg,.png" required>
+
+        <label for="cv">Upload CV</label>
+        <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
+
+        <label for="academicDocs">Upload Academic Documents (Optional)</label>
+        <input type="file" id="academicDocs" name="academicDocs">
+
+        <label for="reason">Why do you want attachment at Living Room Hospital?</label>
+        <textarea id="reason" name="reason" rows="4"></textarea>
+
+        <button type="submit">Submit Application</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
